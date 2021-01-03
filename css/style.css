@@ -7,7 +7,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Xanh Mono', monospace;
+}
 
 .container {
   max-width: 100%;
@@ -18,5 +19,6 @@ body {
     height: auto;
     margin: 1em auto;
     padding: 2em 0;
-    background-color: #007399;
-    border-radius: 10px; }
+    background-color: lightsteelblue; 
+    border-radius: 10px; 
+  }

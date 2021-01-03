@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/j-galkiewicz/The-happy-jar#readme",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.0"
   }
 }

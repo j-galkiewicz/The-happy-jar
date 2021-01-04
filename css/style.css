@@ -146,6 +146,7 @@ body {
 
 /*button*/
 button {
+  font-family: 'Xanh Mono', monospace;
   padding: 2%;
   margin: 4%;
 }

@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0; 
@@ -11,7 +13,7 @@
 
 :root {
   --pink: #FAEBD7;
-  --pink-dark: #DEB887;
+  --pink-dark: #deb887ce;
   --tape-gray: #dbd8be;
   --tape-edge-gray: #b7b49d;
   --transparent: rgba(255, 255, 255, 0);
@@ -29,12 +31,12 @@ body {
   align-items: start;
 
 }
-@media only screen and (max-width: 37.5em) {
-  .body {
-    display: flex;
+  @media only screen and (max-width: 37.5em) {
+    .body {
+      display: flex;
 
+    }
   }
-}
 
 /*quote container*/
 .container {
@@ -44,7 +46,7 @@ body {
   overflow: hidden; 
   position: fixed;
   top: 5%;
-  left: 37%;
+  left: 33%;
 }
 @media only screen and (min-width: 56.26em) and (max-width: 64em){
   .container {
@@ -55,7 +57,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .container {
     top: 15%;
-    left: 7%;
+    left: 5%;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -80,21 +82,21 @@ body {
   font-family: 'Xanh Mono', monospace;
   color: white;
 }
-@media only screen and (min-width: 56.26em) and (max-width: 64em){
-  .header-text {
-    font-size: 3rem;
+  @media only screen and (min-width: 56.26em) and (max-width: 64em){
+    .header-text {
+      font-size: 3rem;
+    }
   }
-}
-@media only screen and (max-width: 56.25em) {
-  .header-text {
-    font-size: 2.6rem;
+  @media only screen and (max-width: 56.25em) {
+    .header-text {
+      font-size: 2.6rem;
+    }
   }
-}
-@media only screen and (max-width: 37.5em) {
-  .header-text {
-    font-size: 1.8rem;
+  @media only screen and (max-width: 37.5em) {
+    .header-text {
+      font-size: 1.8rem;
+    }
   }
-}
 
 /*paper card*/
 .card {
@@ -123,28 +125,28 @@ body {
   margin: auto;
   margin-top: 50px;
 }
-@media only screen and (min-width: 56.26em) and (max-width: 64em){
-  .paper {
-    min-width: 230px;
-    min-height: 190px;
-    font-size: 2.8rem;
+  @media only screen and (min-width: 56.26em) and (max-width: 64em){
+    .paper {
+      min-width: 230px;
+      min-height: 190px;
+      font-size: 2.8rem;
+    }
   }
-}
-@media only screen and (max-width: 56.25em) {
-  .paper{
-    min-width: 200px;
-    min-height: 160px;
-    font-size: 2.4rem;
+  @media only screen and (max-width: 56.25em) {
+    .paper{
+      min-width: 200px;
+      min-height: 160px;
+      font-size: 2.4rem;
+    }
   }
-}
-@media only screen and (max-width: 37.5em) {
-  .paper {
-    min-width: 140px;
-    min-height: 100px;
-    font-size: 1.1rem;
-    justify-content: center;
+  @media only screen and (max-width: 37.5em) {
+    .paper {
+      min-width: 140px;
+      min-height: 100px;
+      font-size: 1.1rem;
+      justify-content: center;
+    }
   }
-}
 .paper::after {
   content: "";
   position: absolute;
@@ -193,9 +195,9 @@ body {
   height: 4vmin;
   position: absolute;
   background-color: var(--tape-gray);
-  opacity: 0.5;
+  opacity: 0.6;
   border-right: 1px dotted var(--tape-edge-gray);
-  border-left: 1px dotted var(--tape-edge-gray);
+  border-left: 2px dotted var(--tape-edge-gray);
 }
 
 .tape-section:last-of-type::after {
@@ -225,22 +227,33 @@ body {
 /*button*/
 button {
   font-family: 'Xanh Mono', monospace;
+  background-color: #663399;
   padding: 2%;
   margin: 4%;
+  display: inline-block;
+  font-size: 1em;
+  color: whitesmoke;
+  appearance: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
 }
-@media only screen and (min-width: 56.26em) and (max-width: 64em){
-  .button {
-    font-size: 1.8rem;
-    padding: 5%;
+
+  @media only screen and (min-width: 56.26em) and (max-width: 64em){
+    .button {
+      font-size: 1.4rem;
+    }
   }
-}
-@media only screen and (max-width: 56.25em) {
-  .button {
-    font-size: 1rem;
+  @media only screen and (max-width: 56.25em) {
+    .button {
+      font-size: 1.2rem;
+    }
   }
-}
-@media only screen and (max-width: 37.5em) {
-  .button {
-    font-size: .6rem;
+  @media only screen and (max-width: 37.5em) {
+    .button {
+      font-size: .8rem;
+    }
   }
-}

@@ -10,7 +10,7 @@ var button = document.querySelector("#quote-btn");
 //array with quotes
 var quotes = [
     { 
-     text: "I am proud of your strenght",
+     text: "I am proud of your strength",
     },
     {
      text: "You have a beautifull mind and body", 
@@ -34,10 +34,106 @@ var quotes = [
      text: "You are loved and needed", 
     },
     { 
+     text: "You are awsome", 
+    },
+    { 
+     text: "You are so kind", 
+    },
+    { 
+     text: "I trust you", 
+    },
+    { 
+     text: "Your strength is inspiring", 
+    },
+    { 
+     text: "You have such a good heart", 
+    },
+    { 
+     text: "You always know exactly what to say", 
+    },
+    { 
+     text: "You're a great listener", 
+    },
+    { 
+     text: "I am a better person because of you", 
+    },
+    { 
+     text: "You have taught me so much", 
+    },
+    { 
+     text: "You are giving the best hugs", 
+    },
+    { 
+     text: "You don't need to change", 
+    },
+    { 
+     text: "I love when you sing", 
+    },
+    { 
+     text: "I hope you are proud of yourself, because I am!", 
+    },
+    { 
+     text: "You have the best ideas", 
+    },
+    { 
+     text: "You can fix everything", 
+    },
+    { 
+     text: "You have amazing creative potential", 
+    },
+    { 
+     text: "I tell everyone how amazing you are", 
+    },
+    { 
+     text: "I love spending time with you", 
+    },
+    { 
+     text: "I love you", 
+    },
+    { 
+     text: "You always able to find a good solution", 
+    },
+    { 
+     text: "Your voice is so damn good", 
+    },
+    { 
+     text: "You are a great skater", 
+    },
+    { 
+     text: "You have the capacity to accomplish everything you want", 
+    },
+    { 
+     text: "You are an excellent friend", 
+    },
+    { 
+     text: "Your voice is much better then Beczala's", 
+    },
+    { 
+     text: "You are fixing my wings", 
+    },
+    { 
+     text: "You inspire a lot of people", 
+    },
+    { 
+     text: "You are the best Son", 
+    },
+    { 
+     text: "You are a great dog owner", 
+    },
+    { 
+     text: "Your inside is even more beautiful than your outside", 
+    },
+    { 
+     text: "You are enough", 
+    },
+    { 
+     text: "Your inside is even more beautiful than your outside", 
+    },
+    { 
      text: "Here are a lot of people who deeply care for you", 
     },
     { 
-     text: "You are the most inteligent man I know" ,
+     text: "You are the most inteligent man I know",
     }
     ]
 

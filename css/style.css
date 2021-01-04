@@ -1,7 +1,13 @@
 * {
   margin: 0;
   padding: 0; 
+  box-sizing: border-box;
 }
+
+::selection {
+  background-color: darkcyan; 
+}
+
 
 :root {
   --pink: #FAEBD7;
@@ -14,19 +20,55 @@
 body {
   background-image: url("../img/sky_plane.jpg");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   min-height: 100vh;
-  justify-content: center;
-  flex-direction: column;
-  display: flex; 
+  justify-items: center;
+  align-items: start;
+
+}
+@media only screen and (max-width: 37.5em) {
+  .body {
+    display: flex;
+
+  }
 }
 
 /*quote container*/
 .container {
   max-width: 100%;
+  float: inherit;
   height: auto;
   overflow: hidden; 
+  position: fixed;
+  top: 5%;
+  left: 37%;
 }
+@media only screen and (min-width: 56.26em) and (max-width: 64em){
+  .container {
+    top: 15%;
+    left: 16%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .container {
+    top: 15%;
+    left: 7%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .container{
+    top: 15%;
+    left: 1%;
+    justify-content: center;
+    max-width: 100%;
+    margin: .4em;
+    padding: 2em;
+  }
+}
+
  .container--quote {
    height: auto;
    margin: 1em auto;
@@ -36,7 +78,22 @@ body {
 }
 .header-text {
   font-family: 'Xanh Mono', monospace;
-  color: aliceblue;
+  color: white;
+}
+@media only screen and (min-width: 56.26em) and (max-width: 64em){
+  .header-text {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .header-text {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header-text {
+    font-size: 1.8rem;
+  }
 }
 
 /*paper card*/
@@ -66,7 +123,28 @@ body {
   margin: auto;
   margin-top: 50px;
 }
-
+@media only screen and (min-width: 56.26em) and (max-width: 64em){
+  .paper {
+    min-width: 230px;
+    min-height: 190px;
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .paper{
+    min-width: 200px;
+    min-height: 160px;
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .paper {
+    min-width: 140px;
+    min-height: 100px;
+    font-size: 1.1rem;
+    justify-content: center;
+  }
+}
 .paper::after {
   content: "";
   position: absolute;
@@ -149,4 +227,20 @@ button {
   font-family: 'Xanh Mono', monospace;
   padding: 2%;
   margin: 4%;
+}
+@media only screen and (min-width: 56.26em) and (max-width: 64em){
+  .button {
+    font-size: 1.8rem;
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .button {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .button {
+    font-size: .6rem;
+  }
 }

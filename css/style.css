@@ -65,7 +65,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .container{
-    top: 8%;
+    top: 7%;
     left: 1%;
     justify-content: center;
     max-width: 100%;
@@ -147,7 +147,7 @@ body {
     .paper {
       min-width: 180px;
       min-height: 140px;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       justify-content: center;
     }
   }

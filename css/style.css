@@ -18,9 +18,7 @@ body {
   min-height: 100vh;
   justify-content: center;
   flex-direction: column;
-  display: flex;
-  font-family: 'Xanh Mono', monospace;
-  color: aliceblue;
+  display: flex; 
 }
 
 /*quote container*/
@@ -35,6 +33,10 @@ body {
    padding: 2em 0;
    border-radius: 10px; 
    max-width: 700px;
+}
+.header-text {
+  font-family: 'Xanh Mono', monospace;
+  color: aliceblue;
 }
 
 /*paper card*/
@@ -88,7 +90,7 @@ body {
 }
 
 /*quote*/
-#quote {
+#quote-body {
   font-family: 'Nothing You Could Do', cursive;
   color: black;
 }

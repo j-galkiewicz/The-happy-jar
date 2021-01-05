@@ -7,15 +7,19 @@
 }
 
 ::selection {
-  background-color: darkcyan; 
+  background-color: var(--cyan); 
 }
 
-
 :root {
-  --pink: #FAEBD7;
-  --pink-dark: #deb887ce;
+  --light: white;
+  --dark: black;
+  --beige: #FAEBD7;
+  --beige-dark: #deb887ce;
   --tape-gray: #dbd8be;
   --tape-edge-gray: #b7b49d;
+  --purple: rgba(255, 0, 130, 0.5);
+  --purple-dark: #663399;
+  --cyan: lightblue; 
   --transparent: rgba(255, 255, 255, 0);
 }
 
@@ -29,14 +33,13 @@ body {
   min-height: 100vh;
   justify-items: center;
   align-items: start;
-
 }
-  @media only screen and (max-width: 37.5em) {
-    .body {
-      display: flex;
+    @media only screen and (max-width: 37.5em) {
+      .body {
+        display: flex;
 
+      }
     }
-  }
 
 /*quote container*/
 .container {
@@ -51,28 +54,28 @@ body {
   margin: 1em;
   padding: 4em;
 }
-@media only screen and (min-width: 56.26em) and (max-width: 64em){
-  .container {
-    top: 15%;
-    left: 9%;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .container {
-    top: 14%;
-    left: 2%;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .container{
-    top: 7%;
-    left: 1%;
-    justify-content: center;
-    max-width: 100%;
-    margin: .4em;
-    padding: 2em;
-  }
-}
+    @media only screen and (min-width: 56.26em) and (max-width: 64em){
+      .container {
+        top: 15%;
+        left: 9%;
+      }
+    }
+    @media only screen and (max-width: 56.25em) {
+      .container {
+        top: 14%;
+        left: 2%;
+      }
+    }
+    @media only screen and (max-width: 37.5em) {
+      .container{
+        top: 7%;
+        left: 1%;
+        justify-content: center;
+        max-width: 100%;
+        margin: .4em;
+        padding: 2em;
+      }
+    }
 
  .container--quote {
    height: auto;
@@ -83,29 +86,29 @@ body {
 }
 .header-text {
   font-family: 'Antic Didone', serif;
-  color: white;
+  color: var(--light);
   font-size: 2.3rem;
 }
-  @media only screen and (min-width: 56.26em) and (max-width: 64em){
-    .header-text {
-      font-size: 3rem;
+    @media only screen and (min-width: 56.26em) and (max-width: 64em){
+      .header-text {
+        font-size: 3rem;
+      }
     }
-  }
-  @media only screen and (max-width: 56.25em) {
-    .header-text {
-      font-size: 2.6rem;
+    @media only screen and (max-width: 56.25em) {
+      .header-text {
+        font-size: 2.6rem;
+      }
     }
-  }
-  @media only screen and (max-width: 37.5em) {
-    .header-text {
-      font-size: 1.9rem;
+    @media only screen and (max-width: 37.5em) {
+      .header-text {
+        font-size: 1.9rem;
+      }
     }
-  }
 
 /*paper card*/
 .card {
-  --paper-color: var(--pink);
-  --paper-dark: var(--pink-dark);
+  --paper-color: var(--beige);
+  --paper-dark: var(--beige-dark);
   --shadow-size: 1px;
   --transparent: rgba(236, 178, 186, 0);
 }
@@ -129,28 +132,29 @@ body {
   margin: auto;
   margin-top: 50px;
 }
-  @media only screen and (min-width: 56.26em) and (max-width: 64em){
-    .paper {
-      min-width: 230px;
-      min-height: 200px;
-      font-size: 2.8rem;
+    @media only screen and (min-width: 56.26em) and (max-width: 64em){
+      .paper {
+        min-width: 230px;
+        min-height: 200px;
+        font-size: 2.8rem;
+      }
     }
-  }
-  @media only screen and (max-width: 56.25em) {
-    .paper{
-      min-width: 220px;
-      min-height: 180px;
-      font-size: 2.4rem;
+    @media only screen and (max-width: 56.25em) {
+      .paper{
+        min-width: 220px;
+        min-height: 180px;
+        font-size: 2.4rem;
+      }
     }
-  }
-  @media only screen and (max-width: 37.5em) {
-    .paper {
-      min-width: 180px;
-      min-height: 140px;
-      font-size: 1.4rem;
-      justify-content: center;
+    @media only screen and (max-width: 37.5em) {
+      .paper {
+        min-width: 180px;
+        min-height: 140px;
+        font-size: 1.4rem;
+        justify-content: center;
+      }
     }
-  }
+
 .paper::after {
   content: "";
   position: absolute;
@@ -176,7 +180,7 @@ body {
 /*quote*/
 #quote-body {
   font-family: 'Nothing You Could Do', cursive;
-  color: black;
+  color: var(--dark);
 }
 
 /*type*/
@@ -231,33 +235,33 @@ body {
 /*button*/
 button {
   font-family: 'Antic Didone', serif;
-  background-color: #663399;
+  background-color: var(--purple-dark);
   padding: 2%;
   margin: 4%;
   display: inline-block;
   font-size: 1.3em;
-  color: whitesmoke;
+  color: var(--light);
   appearance: none;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  box-shadow: 0 2px 25px var(--purple);
 }
 
-  @media only screen and (min-width: 56.26em) and (max-width: 64em){
-    .button {
-      font-size: 1.5rem;
+    @media only screen and (min-width: 56.26em) and (max-width: 64em){
+      .button {
+        font-size: 1.5rem;
+      }
     }
-  }
-  @media only screen and (max-width: 56.25em) {
-    .button {
-      font-size: 1.4rem;
+    @media only screen and (max-width: 56.25em) {
+      .button {
+        font-size: 1.4rem;
+      }
     }
-  }
-  @media only screen and (max-width: 37.5em) {
-    .button {
-      font-size: 1rem;
+    @media only screen and (max-width: 37.5em) {
+      .button {
+        font-size: 1rem;
+      }
     }
-  }

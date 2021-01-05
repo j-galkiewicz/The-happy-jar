@@ -1,4 +1,4 @@
-
+//variable declaration
 var quoteList = "";
 var randomQuote = "";
 var html = "";
@@ -7,7 +7,7 @@ var quote = document.querySelector("#quote");
 var button = document.querySelector("#quote-btn");
 
 
-//array with quotes
+//an array with quotes
 var quotes = [
     { 
      text: "I am proud of your strength",
@@ -137,12 +137,11 @@ var quotes = [
     }
     ]
 
-//mix the cards
+//to mix the cards
 function mixing() {
     quoteList = Object.keys(quotes);
         randomQuote = quoteList[Math.floor(Math.random() * quoteList.length)];
         console.dir(mixing);
-
 }
     //presenting the quote on the page
     function showQuote() {

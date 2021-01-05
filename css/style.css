@@ -82,7 +82,7 @@ body {
    max-width: 700px;
 }
 .header-text {
-  font-family: 'Xanh Mono', monospace;
+  font-family: 'Antic Didone', serif;
   color: white;
   font-size: 2.3rem;
 }
@@ -230,7 +230,7 @@ body {
 
 /*button*/
 button {
-  font-family: 'Xanh Mono', monospace;
+  font-family: 'Antic Didone', serif;
   background-color: #663399;
   padding: 2%;
   margin: 4%;

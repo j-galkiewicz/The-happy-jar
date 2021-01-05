@@ -16,7 +16,7 @@ var quotes = [
      text: "You have a beautifull mind and body", 
     },
     { 
-     text: "I can talk to you about everythinf and it's always unforgettable" ,
+     text: "I can talk to you about everything and it's always unforgettable" ,
     },
     { 
      text: "Do what you can, with what you have, where you are", 
